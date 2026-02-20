@@ -3,16 +3,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerControllerExam03 : MonoBehaviour
 {
-    public float speed;
+    public float speed = 5f;
     public float xRange = 10;
     public GameObject projectilePrefab;
 
-    public bool enableAutoFireMode;
-    public float autoFireInterval = 0.1f;
+    public bool enableAutoFireMode = true;
+    public float autoFireInterval = 0.5f;
 
     private float horizontalInput;
     private InputAction moveAction;
     private InputAction shootAction;
+
+    private float fireTimer = 0f;
 
     private void Awake()
     {
@@ -20,24 +22,55 @@ public class PlayerControllerExam03 : MonoBehaviour
         shootAction = InputSystem.actions.FindAction("Shoot");
     }
 
-    // Update is called once per frame
+    private void OnEnable()
+    {
+        moveAction.Enable();
+        shootAction.Enable();
+    }
+
+    private void OnDisable()
+    {
+        moveAction.Disable();
+        shootAction.Disable();
+    }
+
     void Update()
     {
+        // -------- Movement --------
         horizontalInput = moveAction.ReadValue<Vector2>().x;
-        transform.Translate(horizontalInput * speed * Time.deltaTime * Vector3.right);
+        transform.Translate(Vector3.right * horizontalInput * speed * Time.deltaTime);
 
         if (transform.position.x < -xRange)
-        {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
-        }
-        if (transform.position.x > xRange)
-        {
-            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
-        }
 
-        if (shootAction.triggered)
+        if (transform.position.x > xRange)
+            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+
+        // -------- Shooting --------
+        if (enableAutoFireMode)
         {
-            Instantiate(projectilePrefab, transform.position, transform.rotation);
+            // Auto
+            fireTimer += Time.deltaTime;
+
+            if (fireTimer >= autoFireInterval)
+            {
+                Shoot();
+                fireTimer = 0f;
+            }
+        }
+        else
+        {
+            // Manual
+            if (shootAction.triggered)
+            {
+                Shoot();
+            }
         }
     }
+
+    void Shoot()
+    {
+        Instantiate(projectilePrefab, transform.position, transform.rotation);
+    }
 }
+

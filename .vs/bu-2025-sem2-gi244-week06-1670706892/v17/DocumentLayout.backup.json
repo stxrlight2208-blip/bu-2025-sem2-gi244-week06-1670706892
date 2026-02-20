@@ -1,0 +1,65 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\GitHub\\bu-2025-sem2-gi244-week06-1670706892\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FABDAA4-F0E9-DA19-C090-A948005B9F1D}|Assembly-CSharp.csproj|d:\\1670706892\\playercontrollerexam03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FABDAA4-F0E9-DA19-C090-A948005B9F1D}|Assembly-CSharp.csproj|c:\\users\\administrator\\documents\\github\\bu-2025-sem2-gi244-week06-1670706892\\assets\\scripts\\exam\\playercontrollerexam06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FABDAA4-F0E9-DA19-C090-A948005B9F1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\exam\\playercontrollerexam06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\1670706892\\PlayerControllerExam02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerControllerExam06.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\bu-2025-sem2-gi244-week06-1670706892\\Assets\\Scripts\\Exam\\PlayerControllerExam06.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Exam\\PlayerControllerExam06.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\bu-2025-sem2-gi244-week06-1670706892\\Assets\\Scripts\\Exam\\PlayerControllerExam06.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Exam\\PlayerControllerExam06.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:13:08.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerControllerExam03.cs",
+              "DocumentMoniker": "D:\\1670706892\\PlayerControllerExam03.cs",
+              "ToolTip": "D:\\1670706892\\PlayerControllerExam03.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:49:24.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerControllerExam02.cs",
+              "DocumentMoniker": "D:\\1670706892\\PlayerControllerExam02.cs",
+              "ToolTip": "D:\\1670706892\\PlayerControllerExam02.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:43:26.026Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

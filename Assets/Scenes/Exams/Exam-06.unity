@@ -567,6 +567,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControllerExam06
   movementAxis: 1
   speed: 10
+  Player1: {fileID: 1818353606}
+  Player2: {fileID: 987571340}
+  targetCamera: {fileID: 534669904}
+  offsetY: 10
+  minZoom: 5
+  maxZoom: 20
+  ZoomLimiter: 10
+--- !u!4 &987571340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
+  m_PrefabInstance: {fileID: 987571336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +782,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControllerExam06
   movementAxis: 0
   speed: 10
+  Player1: {fileID: 1818353606}
+  Player2: {fileID: 987571340}
+  targetCamera: {fileID: 534669904}
+  offsetY: 10
+  minZoom: 5
+  maxZoom: 20
+  ZoomLimiter: 10
+--- !u!4 &1818353606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
+  m_PrefabInstance: {fileID: 1080256213}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2095946184
 GameObject:
   m_ObjectHideFlags: 0
